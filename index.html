@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      h1,
+      a,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      .parent {
+        border: 1px solid #2a2a2a;
+        margin: 0.2rem;
+        display: flex;
+        padding: 1rem 2rem;
+      }
+      .child {
+        display: flex;
+        flex-flow: row;
+      }
+      .parent-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .child-1 {
+        display: flex;
+        flex-flow: column;
+      }
+      .child-2 {
+        display: flex;
+        flex-flow: column;
+      }
+      .parent-2 {
+        flex: 1;
+      }
+      .child-2-1 {
+        flex: 1;
+      }
+      .child-2-2 {
+        flex: 1;
+      }
+      .child-2-3 {
+        flex: 1;
+      }
+      h1 {
+        padding: 1rem 2rem;
+      }
+      li a {
+        padding: 1rem 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <nav class="child">
+        <h1 class="child-1 parent-1">Logo</h1>
+        <ul class="child-2 parent-2">
+          <li class="child-2-1"><a href="#">One</a></li>
+          <li class="child-2-2"><a href="#">Two</a></li>
+          <li class="child-2-3"><a href="#">Three</a></li>
+        </ul>
+      </nav>
+    </section>
+  </body>
+</html>
